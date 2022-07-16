@@ -1,0 +1,25 @@
+version: '3.5'
+
+services:
+  test:
+    build:
+      context: ./
+      args:
+        version: local-build
+    container_name: test-pismo
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+    restart: always
+
+  postgres:
+    container_name: postgres_container
+    image: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      PGDATA: /data/postgres
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
