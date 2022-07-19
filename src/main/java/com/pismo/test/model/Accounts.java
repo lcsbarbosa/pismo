@@ -1,17 +1,18 @@
 package com.pismo.test.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
+@Data
 @Entity
-@Getter @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Accounts {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private Integer documentNumber;
-
+    @Column(name="document_number")
+    private String documentNumber;
 }
