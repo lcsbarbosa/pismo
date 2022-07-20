@@ -66,15 +66,15 @@ class TransactionsServiceTest {
         assertThat(transaction).isNotNull();
     }
 
-    @Test
-    public void shouldCreateAccount(){
-        given(repository.save(transactions)).willReturn(transactions);
-
-        var transactionSave = service.create(transactions);
-        System.out.println(transactionSave);
-
-        assertThat(transactionSave).isNotNull();
-    }
+//    @Test
+//    public void shouldCreateAccount(){
+//        given(repository.save(transactions)).willReturn(transactions);
+//
+//        var transactionSave = service.create(transactions);
+//        System.out.println(transactionSave);
+//
+//        assertThat(transactionSave).isNotNull();
+//    }
 
 
 }
