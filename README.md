@@ -1,6 +1,6 @@
 <h1 align="center"> Projeto Pismo </h1>
 
-##Project
+## Project
 
 Pismo evaluation project.
 
@@ -8,7 +8,7 @@ Where the goal is to create a card payment system
 
 ![img.png](img.png)
 
-##Configuration
+## Configuration
 
 To run the docker-compose, you will need to generate a updated Jar.
 ```bash
@@ -31,7 +31,7 @@ For checking the status of the application, you need to surf this link in the
 browser (or Postman): http://www.localhost:8080/health and the 
 response is "Up"
 
-##Documentation
+## Documentation
 
 This project is using Swagger to document the endpoints
 
@@ -41,7 +41,7 @@ To access the swagger, you need to run the project and the access this URL:
 http://localhost:8080/swagger-ui/index.html
 ```
 
-##Tecnologias Utilizadas
+## Tecnologias Utilizadas
 Java 17
 
 Springboot
