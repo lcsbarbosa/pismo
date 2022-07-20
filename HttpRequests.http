@@ -1,0 +1,18 @@
+POST http://localhost:8080/accounts
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost:8080/transactions/
+Content-Type: application/json
+
+{
+  "accounts_id": 4,
+  "operationType_id": 2,
+  "amount": "899.99"
+}
+
+###
+GET http://localhost:8080/health
+Accept: application/json
