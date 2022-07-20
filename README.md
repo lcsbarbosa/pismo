@@ -31,6 +31,16 @@ For checking the status of the application, you need to surf this link in the
 browser (or Postman): http://www.localhost:8080/health and the 
 response is "Up"
 
+##Documentation
+
+This project is using Swagger to document the endpoints
+
+To access the swagger, you need to run the project and the access this URL:
+
+```bash
+http://localhost:8080/swagger-ui/index.html
+```
+
 ##Tecnologias Utilizadas
 Java 17
 
